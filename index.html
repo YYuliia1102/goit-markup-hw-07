@@ -13,16 +13,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container">
+      <div class="container header-mob">
         <nav class="navigation">
           <a class="logo link" href="./index.html">
-            <span class="logo-web">Web</span>Studio</a
-          >
+            <span class="logo-web">Web</span>Studio</a>
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link active" href="./index.html">Studio</a>
@@ -38,22 +40,89 @@
           <ul class="contact-block list">
             <li class="contact-item">
               <a class="contact-mail link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                >info@devstudio.com</a>
             </li>
             <li class="contact-item">
               <a class="contact-number link" href="tel:+11(000)111-11-11"
-                >+11 (000) 111-11-11</a
-              >
+                >+11 (000) 111-11-11</a>
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open" type="button" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-burger" ></use>
+          </svg>
+        </button>
+      </div>
+
+<!----------- MOBILE MENU ---------->
+
+
+        <div class="mobile-menu" data-menu>
+          <div class="container mob-menu__container">
+          <button type="button" class="mob-menu__close-btn" data-menu-close>
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link active" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mob-contact-block list">
+            <li class="mob-contact-item">
+              <a class="mob-contact-number link" href="tel:+11(000)111-11-11"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li class="mob-contact-item">
+              <a class="mob-contact-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-soc-list list">
+            <li class="team-soc-item">
+              <a href="#" class="team-soc-link link">
+                <svg class="team-soc-icon" weight="16" height="16">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="#" class="team-soc-link link">
+                <svg class="team-soc-icon" weight="16" height="16">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="#" class="team-soc-link link">
+                <svg class="team-soc-icon" weight="16" height="16">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="#" class="team-soc-link link">
+                <svg class="team-soc-icon" weight="16" height="16">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- HERO -->
-      <section class="hero">
+    <!-- HERO -->
+    <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
@@ -62,7 +131,7 @@
         </div>
       </section>
 
-      <!--Section 1 Description-->
+    <!--Section 1 Description-->
       <section class="description">
         <div class="container">
           <ul class="main-description list">
@@ -98,8 +167,8 @@
         </div>
       </section>
 
-      <!--Section 2 What are we doing-->
-      <section class="function">
+    <!--Section 2 What are we doing-->
+    <section class="function">
         <div class="container">
           <h2 class="fuction-title">What are we doing</h2>
           <ul class="functin-list list">
@@ -131,13 +200,14 @@
         </div>
       </section>
 
-      <!--Section 3  Our Team-->
-      <section class="team">
+    <!--Section 3  Our Team-->
+    <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-block">
-              <img
+              <img 
+                srcset="./images/img4.jpeg 1x, ./images/img4-2x.jpeg 2x"
                 src="./images/img4.jpeg"
                 alt="Mark Guerrero"
                 width="264"
@@ -178,6 +248,7 @@
             </li>
             <li class="team-block">
               <img
+                srcset="./images/img5.jpeg 1x, ./images/img5-2x.jpeg 2x"
                 src="./images/img5.jpeg"
                 alt="Tom Ford"
                 width="264"
@@ -218,6 +289,7 @@
             </li>
             <li class="team-block">
               <img
+                srcset="./images/img6.jpeg 1x, ./images/img6-2x.jpeg 2x"
                 src="./images/img6.jpeg"
                 alt="Camila Garcia"
                 width="264"
@@ -258,6 +330,7 @@
             </li>
             <li class="team-block">
               <img
+                srcset="./images/img7.jpeg 1x, ./images/img7-2x.jpeg 2x"
                 src="./images/img7.jpeg"
                 alt="Daniel Wilson"
                 width="264"
@@ -300,8 +373,8 @@
         </div>
       </section>
 
-      <!--Section 4  CUSTOMERS-->
-      <section class="customer">
+    <!--Section 4  CUSTOMERS-->
+    <!-- <section class="customer">
         <div class="container">
           <h2 class="customer-title">Customers</h2>
           <ul class="customer-list-company list">
@@ -350,10 +423,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div>
           <a class="logo-footer link" href="./index.html">
@@ -418,9 +491,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -494,8 +567,9 @@
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-    </div>
+    </div>-->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>

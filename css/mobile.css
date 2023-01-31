@@ -1,0 +1,47 @@
+/*-------- HEDER -------- */
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+    margin: 0 auto;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+
+  /*-------- Section 1 Description -------- */
+  .function {
+    display: none;
+  }
+}
+
+/*-------- MOBILE MENU -------- */
+
+@media screen and (max-width: 479px) {
+  .mob-menu-link {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .mob-contact-number {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .mob-soc-list {
+    gap: 32px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-mobile-2x.jpeg);
+    }
+  }
+
+  .function {
+    display: none;
+  }
+}

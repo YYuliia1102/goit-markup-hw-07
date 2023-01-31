@@ -1,0 +1,149 @@
+/*-------- HEDER -------- */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1128px;
+  }
+
+  .header {
+    padding-bottom: 24px;
+  }
+
+  .contact-mail {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .contact-number {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .contact-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .contact-block {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .header-mob {
+    display: block;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpeg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-desktop-2x.jpeg);
+    }
+  }
+
+  .description {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .main-description {
+    display: flex;
+    gap: 24px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+  }
+
+  .main-description-title {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .block-description {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .block-description::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+  }
+
+  .block-description:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+  }
+
+  .block-description:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+  }
+
+  .block-description:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+  }
+
+  .block-description:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+  }
+
+  .text-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+  }
+
+  /* ---------- Section 2 What are we doing ------- */
+
+  .function {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .fuction-title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
+  }
+  .functin-list {
+    display: flex;
+    gap: 24px;
+  }
+
+/* ------- Section 3  Our Team -------- */
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
