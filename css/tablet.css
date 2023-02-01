@@ -54,7 +54,7 @@
   .menu-link.active::after {
     position: absolute;
     left: 0;
-    bottom: -24px;
+    bottom: -20px;
     width: 100%;
     height: 4px;
     content: "";

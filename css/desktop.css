@@ -29,6 +29,10 @@
     justify-content: flex-end;
   }
 
+  .menu-link.active::after {
+    bottom: -25px;
+  }
+
   .header-mob {
     display: block;
   }
@@ -194,7 +198,7 @@
   .footer-subscribe {
     flex-wrap: nowrap;
   }
-  
+
   /* ================ PORTFOLIO =============== */
 
   .filter {
