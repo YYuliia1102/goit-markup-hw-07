@@ -43,10 +43,10 @@ button {
 }
 
 .container {
-  /* display: flex; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .header-mob {
@@ -286,6 +286,7 @@ button {
 .description {
   padding-top: 96px;
   padding-bottom: 96px;
+  margin: 0 auto;
 }
 
 .main-description {
@@ -411,8 +412,8 @@ button {
 /* ----------- CUSTOMER ---------- */
 
 .customer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .customer-title {
@@ -428,12 +429,16 @@ button {
 
 .customer-list-company {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 72px 16px;
+  justify-content: space-between;
 }
 
 .customer-list-item {
   display: flex;
-  width: 168px;
+  text-align: center;
+  width: 190px;
   height: 88px;
   align-items: center;
   justify-content: center;
@@ -470,18 +475,34 @@ button {
 /* ----------- FOOTER ---------- */
 
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background: var(--title-color);
 }
 
 .footer > .container {
   display: flex;
-  align-items: baseline;
-  /* gap: 120px; */
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+}
+
+
+.footer-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
 }
 
 .logo-footer {
+  text-align: center;
   margin-bottom: 16px;
   display: inline-block;
   font-family: "Raleway";
@@ -503,16 +524,16 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
-  margin-right: 120px;
 }
 
 .footer .social-media {
   display: flex;
   flex-direction: column;
-  margin-right: 80px;
 }
 
 .social-media-title {
+  text-align: center;
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -525,7 +546,6 @@ button {
   display: flex;
   justify-content: center;
   gap: 16px;
-  /* padding-bottom: 36px; */
 }
 
 .footer-soc-item {
@@ -686,9 +706,14 @@ button {
 
 .form-subscribe {
   display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .subscribe-title {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -707,7 +732,7 @@ button {
 }
 
 .form-input-subscribe {
-  width: 264px;
+  width: 396px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;

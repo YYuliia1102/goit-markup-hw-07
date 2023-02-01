@@ -157,4 +157,11 @@
     gap: 24px;
   }
   
+  .customer-list-company {
+    justify-content: center;
+  }
+
+  .form-input-subscribe {
+    width: 264px;
+  }
 }
