@@ -153,7 +153,9 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  
+  .customer-list-company{
+    width: 100%;
+  }
   .customer-list-item {
    width: 168px;
   }
@@ -162,6 +164,8 @@
     flex-wrap: nowrap;
     gap: 24px;
   }
+
+
 
   /* ----------- FOOTER ---------- */
 
@@ -172,7 +176,13 @@
 
   .footer > .container {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
     align-items: baseline;
+    width: 1128px;
+  }
+  .footer-wrap {
+    margin-right: 120px;
   }
 
   .footer-text {
@@ -183,6 +193,9 @@
     margin-right: 80px;
   }
 
+  .footer-subscribe {
+    flex-wrap: nowrap;
+  }
 
 }
 

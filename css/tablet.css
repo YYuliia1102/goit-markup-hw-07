@@ -8,6 +8,10 @@
     padding-bottom: 10px;
   }
 
+  .header-mob {
+    justify-content: center;
+  }
+
   .navigation {
     display: flex;
     align-items: center;
@@ -139,6 +143,7 @@
   .main-description {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     gap: 24px;
   }
@@ -156,12 +161,60 @@
   .team-list {
     gap: 24px;
   }
-  
+
   .customer-list-company {
     justify-content: center;
   }
 
   .form-input-subscribe {
     width: 264px;
+  }
+
+  /* ----------- CUSTOMER ---------- */
+
+  .customer .container {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .customer-list-company {
+    width: 552px;
+  }
+
+  .customer-list-item {
+    width: 168px;
+  }
+
+  /* ----------- FOOTER ---------- */
+
+  .footer > .container {
+    /* display: flex; */
+    width: 552px;
+    flex-direction: row;
+    gap: 72px 24px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .logo-footer {
+    text-align: left;
+  }
+
+  .social-media-title {
+    text-align: left;
+  }
+
+  .subscribe-title {
+    text-align: left;
+  }
+
+  .footer-subscribe {
+    gap: 24px;
   }
 }

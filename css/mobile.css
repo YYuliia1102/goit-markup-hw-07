@@ -16,6 +16,11 @@
 /*-------- MOBILE MENU -------- */
 
 @media screen and (max-width: 479px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .mob-menu-link {
     font-weight: 700;
     font-size: 30px;
