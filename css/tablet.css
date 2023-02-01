@@ -217,4 +217,15 @@
   .footer-subscribe {
     gap: 24px;
   }
+
+  /* ================ PORTFOLIO =============== */
+
+  .filter-list {
+    justify-content: center;
+  }
+
+  .filter {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }

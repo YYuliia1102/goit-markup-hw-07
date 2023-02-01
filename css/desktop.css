@@ -153,19 +153,17 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .customer-list-company{
+  .customer-list-company {
     width: 100%;
   }
   .customer-list-item {
-   width: 168px;
+    width: 168px;
   }
 
   .customer-list-company {
     flex-wrap: nowrap;
     gap: 24px;
   }
-
-
 
   /* ----------- FOOTER ---------- */
 
@@ -196,6 +194,11 @@
   .footer-subscribe {
     flex-wrap: nowrap;
   }
+  
+  /* ================ PORTFOLIO =============== */
 
+  .filter {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
 }
-
