@@ -1,7 +1,7 @@
 /*-------- HEDER -------- */
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1128px;
+    width: 1158px;
   }
 
   .header {
@@ -38,6 +38,8 @@
   }
 
   .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -153,6 +155,9 @@
     display: flex;
     flex-wrap: nowrap;
   }
+  .team-block {
+    max-width: 264px;
+  }
 
   /* ----------- CUSTOMER ---------- */
 
@@ -184,13 +189,9 @@
     flex-wrap: nowrap;
     gap: 0;
     align-items: baseline;
-    width: 1128px;
+    width: 1158px;
   }
   .footer-wrap {
-    margin-right: 120px;
-  }
-
-  .footer-text {
     margin-right: 120px;
   }
 

@@ -1,7 +1,7 @@
 /*-------- HEDER -------- */
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 428px;
+    width: 428px;
   }
   .hero-title {
     font-size: 36px;
