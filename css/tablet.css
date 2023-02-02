@@ -140,14 +140,6 @@
 
   /* ---------- Section 1 Description ------- */
 
-  .main-description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    gap: 24px;
-  }
-
   .block-description {
     width: 356px;
   }
@@ -159,7 +151,7 @@
   /* ------- Section 3  Our Team -------- */
 
   .team-list {
-    gap: 24px;
+    gap: 64px 24px;
   }
 
   .customer-list-company {
